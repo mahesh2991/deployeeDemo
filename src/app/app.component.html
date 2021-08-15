@@ -1,0 +1,143 @@
+<!--<h1>Angular Material</h1>-->
+<!--<hr>-->
+<!--<div>-->
+<!--  <button mat-raised-button color="primary">CLICK ME</button>-->
+<!--</div>-->
+
+<!--<div class="mat-display-1">header-1</div>-->
+<!--<div class="mat-display-2">header-2</div>-->
+<!--<div class="mat-display-3">header-3</div>-->
+<!--<div class="mat-display-4">header-4</div>-->
+
+<!--<div class="mat-headline">heading-1</div>-->
+<!--<div class="mat-title">heading</div>-->
+<!--<div class="mat-subheading-1">subheading-1</div>-->
+<!--<div class="mat-subheading-2">subheading-2</div>-->
+<!--<div class="mat-body-1"> body text</div>-->
+<!--<div class="mat-body-2">bold body text</div>-->
+<!--<div class="mat-body-3">caption text</div>-->
+
+
+<!--<div class="mat-typography">-->
+<!--  <h1>for head-1</h1>-->
+<!--  <h2>for head-2</h2>-->
+<!--  <h3> for head-3</h3>-->
+<!--  <h4> for head-4</h4>-->
+<!--</div>-->
+<!--<div>-->
+<!--  <button mat-button color="primary">click me </button>-->
+<!--  <br>-->
+<!--  <button mat-raised-button color="accent">click me</button>-->
+<!--  <br>-->
+<!--  <button mat-flat-button color="warn">click me</button>-->
+<!--  <br>-->
+<!--  <button mat-stroked-button>click</button>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--  <button mat-icon-button> icon Button</button>-->
+<!--  <button mat-fab> fab Button</button>-->
+<!--  <button mat-mini-fab> mini Button</button>-->
+<!--  <br>-->
+<!--  <button mat-button color="primary" disableRipple>click me </button>-->
+<!--&lt;!&ndash;  <a href="https://www.youtube.com/watch?v=0ZHoHaa16UE&list=PLKIBeLKGEbp4IFs7fZPnKD8yU20nKZA13&index=5" mat-raised-button color="warn"> youtube</a>&ndash;&gt;-->
+<!--</div>-
+<!--<div>-->
+<!--  <mat-button-toggle #state disableRipple>Toggle</mat-button-toggle>-->
+<!--  <mat-button-toggle #state disabled>Toggle</mat-button-toggle>-->
+<!--  {{state.checked }}-->
+<!--</div>-->
+
+<!--<div>-->
+<!--  <mat-button-toggle-group #group="matButtonToggleGroup" multiple>-->
+<!--    <mat-button-toggle value="Angular">Angular</mat-button-toggle>-->
+<!--    <mat-button-toggle value="react" checked>react</mat-button-toggle>-->
+<!--    <mat-button-toggle value="vue">vue</mat-button-toggle>-->
+<!--    <mat-button-toggle value="bootstrap">bootstrap</mat-button-toggle>-->
+<!--  </mat-button-toggle-group>-->
+<!--  <br><br>-->
+<!--  {{group.value}}-->
+
+<!--</div>-->
+<!--<div>-->
+<!--  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>-->
+<!--  <mat-icon color="warn">remove_red_eye</mat-icon>-->
+<!--</div>-->
+<!--<div><span matBadge="7"> Notification</span></div>-->
+<!--  <div><span matBadge="7" matBadgePosition="above after"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgePosition="above before"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgePosition="below after"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgePosition="below before"> Notification</span></div>-->
+
+<!--<div><span matBadge="7" matBadgeSize="large"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgeSize="medium"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgeSize="small"> Notification</span></div>-->
+
+
+<!--<div><span matBadge="7" matBadgeColor="warn"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgeColor="accent"> Notification</span></div>-->
+<!--<div><span matBadge="7" matBadgeColor="primary"> Notification</span></div>-->
+
+<!--<div><mat-spinner></mat-spinner></div>-->
+
+
+<!--<div>-->
+<!--  <mat-spinner color="warn" *ngIf="showSpiner"></mat-spinner>-->
+<!--  <button mat-raised-button color="warn" (click)="loadData()">load data</button>-->
+<!--</div>-->
+
+<!--<mat-toolbar>-->
+<!--  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">-->
+<!--    <mat-icon>menu</mat-icon>-->
+<!--  </button>-->
+<!--  <span>My App</span>-->
+<!--  <span class="example-spacer"></span>-->
+<!--  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">-->
+<!--    <mat-icon>favorite</mat-icon>-->
+<!--  </button>-->
+<!--  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">-->
+<!--    <mat-icon>share</mat-icon>-->
+<!--  </button>-->
+<!--</mat-toolbar>-->
+
+<!--<mat-drawer-container>-->
+<!--  <mat-drawer [(opened)]="opened" )]>side content</mat-drawer>-->
+<!--</mat-drawer-container>-->
+<!--<mat-drawer-content>-->
+<!--  <button (click)="opened=!opened">menu</button>-->
+<!--</mat-drawer-content>-->
+
+<!--input cde start -->
+<!--<mat-form-field>-->
+<!--  <mat-label>Name:</mat-label>-->
+<!--  <input type="text" matInput required>-->
+<!--</mat-form-field>-->
+
+
+<!--<mat-form-field floatLabel="always" hideRequiredMarker>-->
+<!--  <label for="">Name:</label>-->
+<!--  <input type="text" matInput required>-->
+<!--</mat-form-field>-->
+
+
+  <mat-form-field appearance="outline" style="background-color: black">
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+
+
+
+
+
